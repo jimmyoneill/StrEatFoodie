@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20CD05B215FDBB44006ADD68 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */; };
+		20CD05B315FDBB44006ADD68 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059315FDBB44006ADD68 /* BackgroundView.m */; };
+		20CD05B415FDBB44006ADD68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20CD059615FDBB44006ADD68 /* MainMenu.xib */; };
+		20CD05B815FDBB44006ADD68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059E15FDBB44006ADD68 /* main.m */; };
+		20CD05B915FDBB44006ADD68 /* MenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05A015FDBB44006ADD68 /* MenubarController.m */; };
+		20CD05BA15FDBB44006ADD68 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05A215FDBB44006ADD68 /* NSString+Levenshtein.m */; };
+		20CD05BB15FDBB44006ADD68 /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05A415FDBB44006ADD68 /* Panel.m */; };
+		20CD05BC15FDBB44006ADD68 /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20CD05A515FDBB44006ADD68 /* Panel.xib */; };
+		20CD05BD15FDBB44006ADD68 /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05A715FDBB44006ADD68 /* PanelController.m */; };
+		20CD05BE15FDBB44006ADD68 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05A915FDBB44006ADD68 /* StatusItemView.m */; };
+		20CD05C015FDBB44006ADD68 /* StrEatFoodTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05AD15FDBB44006ADD68 /* StrEatFoodTweet.m */; };
+		20CD05C115FDBB44006ADD68 /* StrEatFoodMealIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05AF15FDBB44006ADD68 /* StrEatFoodMealIndex.m */; };
+		20CD32C215F1429A0058766A /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CD32C015F1429A0058766A /* Status.png */; };
+		20CD32C315F1429A0058766A /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CD32C115F1429A0058766A /* StatusHighlighted.png */; };
+		20CDD6FB15FDC87700A97A62 /* libTweetStreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F1391215FDC725007CC1DE /* libTweetStreamer.a */; };
+		20EAA8681615891C008531AE /* streatfoodlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EAA8671615891C008531AE /* streatfoodlogo.png */; };
+		20EAA86A16158C33008531AE /* streatfoodbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20EAA86916158C33008531AE /* streatfoodbackground.jpeg */; };
+		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20F1391115FDC725007CC1DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20C39E7215FD742A00A9D545;
+			remoteInfo = TweetStreamer;
+		};
+		20F1391315FDC73B007CC1DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 20C39E7115FD742A00A9D545;
+			remoteInfo = TweetStreamer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20CD059015FDBB44006ADD68 /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDelegate.h; path = StrEatFoodie/ApplicationDelegate.h; sourceTree = SOURCE_ROOT; };
+		20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationDelegate.m; path = StrEatFoodie/ApplicationDelegate.m; sourceTree = SOURCE_ROOT; };
+		20CD059215FDBB44006ADD68 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundView.h; path = StrEatFoodie/BackgroundView.h; sourceTree = SOURCE_ROOT; };
+		20CD059315FDBB44006ADD68 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundView.m; path = StrEatFoodie/BackgroundView.m; sourceTree = SOURCE_ROOT; };
+		20CD059415FDBB44006ADD68 /* DebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugMacros.h; path = StrEatFoodie/DebugMacros.h; sourceTree = SOURCE_ROOT; };
+		20CD059715FDBB44006ADD68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
+		20CD059E15FDBB44006ADD68 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StrEatFoodie/main.m; sourceTree = SOURCE_ROOT; };
+		20CD059F15FDBB44006ADD68 /* MenubarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenubarController.h; path = StrEatFoodie/MenubarController.h; sourceTree = SOURCE_ROOT; };
+		20CD05A015FDBB44006ADD68 /* MenubarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenubarController.m; path = StrEatFoodie/MenubarController.m; sourceTree = SOURCE_ROOT; };
+		20CD05A115FDBB44006ADD68 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Levenshtein.h"; path = "StrEatFoodie/NSString+Levenshtein.h"; sourceTree = SOURCE_ROOT; };
+		20CD05A215FDBB44006ADD68 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Levenshtein.m"; path = "StrEatFoodie/NSString+Levenshtein.m"; sourceTree = SOURCE_ROOT; };
+		20CD05A315FDBB44006ADD68 /* Panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Panel.h; path = StrEatFoodie/Panel.h; sourceTree = SOURCE_ROOT; };
+		20CD05A415FDBB44006ADD68 /* Panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Panel.m; path = StrEatFoodie/Panel.m; sourceTree = SOURCE_ROOT; };
+		20CD05A515FDBB44006ADD68 /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Panel.xib; path = StrEatFoodie/Panel.xib; sourceTree = SOURCE_ROOT; };
+		20CD05A615FDBB44006ADD68 /* PanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelController.h; path = StrEatFoodie/PanelController.h; sourceTree = SOURCE_ROOT; };
+		20CD05A715FDBB44006ADD68 /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanelController.m; path = StrEatFoodie/PanelController.m; sourceTree = SOURCE_ROOT; };
+		20CD05A815FDBB44006ADD68 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusItemView.h; path = StrEatFoodie/StatusItemView.h; sourceTree = SOURCE_ROOT; };
+		20CD05A915FDBB44006ADD68 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusItemView.m; path = StrEatFoodie/StatusItemView.m; sourceTree = SOURCE_ROOT; };
+		20CD05AA15FDBB44006ADD68 /* StrEatFoodie-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "StrEatFoodie-Info.plist"; path = "StrEatFoodie/StrEatFoodie-Info.plist"; sourceTree = SOURCE_ROOT; };
+		20CD05AB15FDBB44006ADD68 /* StrEatFoodie-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "StrEatFoodie-Prefix.pch"; path = "StrEatFoodie/StrEatFoodie-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		20CD05AC15FDBB44006ADD68 /* StrEatFoodTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrEatFoodTweet.h; path = StrEatFoodie/StrEatFoodTweet.h; sourceTree = SOURCE_ROOT; };
+		20CD05AD15FDBB44006ADD68 /* StrEatFoodTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StrEatFoodTweet.m; path = StrEatFoodie/StrEatFoodTweet.m; sourceTree = SOURCE_ROOT; };
+		20CD05AE15FDBB44006ADD68 /* StrEatFoodMealIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrEatFoodMealIndex.h; path = StrEatFoodie/StrEatFoodMealIndex.h; sourceTree = SOURCE_ROOT; };
+		20CD05AF15FDBB44006ADD68 /* StrEatFoodMealIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StrEatFoodMealIndex.m; path = StrEatFoodie/StrEatFoodMealIndex.m; sourceTree = SOURCE_ROOT; };
+		20CD32C015F1429A0058766A /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
+		20CD32C115F1429A0058766A /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+		20EAA8671615891C008531AE /* streatfoodlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streatfoodlogo.png; sourceTree = "<group>"; };
+		20EAA86916158C33008531AE /* streatfoodbackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = streatfoodbackground.jpeg; sourceTree = "<group>"; };
+		20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TweetStreamer.xcodeproj; path = ../TweetStreamer/TweetStreamer.xcodeproj; sourceTree = "<group>"; };
+		DD4F7C0413C30F9F00825C6E /* StrEatFoodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrEatFoodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DD4F7C0C13C30F9F00825C6E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD4F7C0D13C30F9F00825C6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD4F7C0113C30F9F00825C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CDD6FB15FDC87700A97A62 /* libTweetStreamer.a in Frameworks */,
+				DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20F1390B15FDC725007CC1DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20F1391215FDC725007CC1DE /* libTweetStreamer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4F7BF913C30F9F00825C6E = {
+			isa = PBXGroup;
+			children = (
+				DD4F7C0E13C30F9F00825C6E /* Sources */,
+				DD4F7C2813C3123E00825C6E /* User Interface */,
+				DD4F7C0713C30F9F00825C6E /* Frameworks */,
+				DD4F7C0513C30F9F00825C6E /* Products */,
+				20CD05AA15FDBB44006ADD68 /* StrEatFoodie-Info.plist */,
+				20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		DD4F7C0513C30F9F00825C6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD4F7C0413C30F9F00825C6E /* StrEatFoodie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4F7C0713C30F9F00825C6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4F7C0B13C30F9F00825C6E /* AppKit.framework */,
+				DD4F7C0C13C30F9F00825C6E /* CoreData.framework */,
+				DD4F7C0D13C30F9F00825C6E /* Foundation.framework */,
+				DD4F7C0813C30F9F00825C6E /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD4F7C0E13C30F9F00825C6E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DD4F7C2613C311DF00825C6E /* Controllers */,
+				DD4F7C3913C317EC00825C6E /* Views */,
+				DD4F7C0F13C30F9F00825C6E /* Supporting Files */,
+				20CD05A115FDBB44006ADD68 /* NSString+Levenshtein.h */,
+				20CD05A215FDBB44006ADD68 /* NSString+Levenshtein.m */,
+				20CD05AC15FDBB44006ADD68 /* StrEatFoodTweet.h */,
+				20CD05AD15FDBB44006ADD68 /* StrEatFoodTweet.m */,
+				20CD05AE15FDBB44006ADD68 /* StrEatFoodMealIndex.h */,
+				20CD05AF15FDBB44006ADD68 /* StrEatFoodMealIndex.m */,
+				20CD059015FDBB44006ADD68 /* ApplicationDelegate.h */,
+				20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */,
+			);
+			name = Sources;
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		DD4F7C0F13C30F9F00825C6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20CD059415FDBB44006ADD68 /* DebugMacros.h */,
+				20CD05AB15FDBB44006ADD68 /* StrEatFoodie-Prefix.pch */,
+				20CD059E15FDBB44006ADD68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD4F7C2613C311DF00825C6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20CD05A615FDBB44006ADD68 /* PanelController.h */,
+				20CD05A715FDBB44006ADD68 /* PanelController.m */,
+				20CD059F15FDBB44006ADD68 /* MenubarController.h */,
+				20CD05A015FDBB44006ADD68 /* MenubarController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DD4F7C2813C3123E00825C6E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				DD4F7C4813C322D800825C6E /* Graphics */,
+				DD4F7C2913C3124300825C6E /* XIBs */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		DD4F7C2913C3124300825C6E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				20CD05A515FDBB44006ADD68 /* Panel.xib */,
+				20CD059615FDBB44006ADD68 /* MainMenu.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		DD4F7C3913C317EC00825C6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20CD05A315FDBB44006ADD68 /* Panel.h */,
+				20CD05A415FDBB44006ADD68 /* Panel.m */,
+				20CD05A815FDBB44006ADD68 /* StatusItemView.h */,
+				20CD05A915FDBB44006ADD68 /* StatusItemView.m */,
+				20CD059215FDBB44006ADD68 /* BackgroundView.h */,
+				20CD059315FDBB44006ADD68 /* BackgroundView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DD4F7C4813C322D800825C6E /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				20EAA86916158C33008531AE /* streatfoodbackground.jpeg */,
+				20EAA8671615891C008531AE /* streatfoodlogo.png */,
+				20CD32C015F1429A0058766A /* Status.png */,
+				20CD32C115F1429A0058766A /* StatusHighlighted.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD4F7C0313C30F9F00825C6E /* StrEatFoodie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4F7C2213C30F9F00825C6E /* Build configuration list for PBXNativeTarget "StrEatFoodie" */;
+			buildPhases = (
+				DD4F7C0013C30F9F00825C6E /* Sources */,
+				DD4F7C0113C30F9F00825C6E /* Frameworks */,
+				DD4F7C0213C30F9F00825C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20F1391415FDC73B007CC1DE /* PBXTargetDependency */,
+			);
+			name = StrEatFoodie;
+			productName = Popup;
+			productReference = DD4F7C0413C30F9F00825C6E /* StrEatFoodie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD4F7BFB13C30F9F00825C6E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DD4F7BFE13C30F9F00825C6E /* Build configuration list for PBXProject "StrEatFoodie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD4F7BF913C30F9F00825C6E;
+			productRefGroup = DD4F7C0513C30F9F00825C6E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 20F1390B15FDC725007CC1DE /* Products */;
+					ProjectRef = 20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DD4F7C0313C30F9F00825C6E /* StrEatFoodie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		20F1391215FDC725007CC1DE /* libTweetStreamer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTweetStreamer.a;
+			remoteRef = 20F1391115FDC725007CC1DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD4F7C0213C30F9F00825C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CD32C215F1429A0058766A /* Status.png in Resources */,
+				20CD32C315F1429A0058766A /* StatusHighlighted.png in Resources */,
+				20CD05B415FDBB44006ADD68 /* MainMenu.xib in Resources */,
+				20CD05BC15FDBB44006ADD68 /* Panel.xib in Resources */,
+				20EAA8681615891C008531AE /* streatfoodlogo.png in Resources */,
+				20EAA86A16158C33008531AE /* streatfoodbackground.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4F7C0013C30F9F00825C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CD05B215FDBB44006ADD68 /* ApplicationDelegate.m in Sources */,
+				20CD05B315FDBB44006ADD68 /* BackgroundView.m in Sources */,
+				20CD05B815FDBB44006ADD68 /* main.m in Sources */,
+				20CD05B915FDBB44006ADD68 /* MenubarController.m in Sources */,
+				20CD05BA15FDBB44006ADD68 /* NSString+Levenshtein.m in Sources */,
+				20CD05BB15FDBB44006ADD68 /* Panel.m in Sources */,
+				20CD05BD15FDBB44006ADD68 /* PanelController.m in Sources */,
+				20CD05BE15FDBB44006ADD68 /* StatusItemView.m in Sources */,
+				20CD05C015FDBB44006ADD68 /* StrEatFoodTweet.m in Sources */,
+				20CD05C115FDBB44006ADD68 /* StrEatFoodMealIndex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20F1391415FDC73B007CC1DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweetStreamer;
+			targetProxy = 20F1391315FDC73B007CC1DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20CD059615FDBB44006ADD68 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20CD059715FDBB44006ADD68 /* en */,
+			);
+			name = MainMenu.xib;
+			path = StrEatFoodie/en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD4F7C2013C30F9F00825C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+				USER_HEADER_SEARCH_PATHS = "../TweetStreamer/**";
+			};
+			name = Debug;
+		};
+		DD4F7C2113C30F9F00825C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+				USER_HEADER_SEARCH_PATHS = "../TweetStreamer/**";
+			};
+			name = Release;
+		};
+		DD4F7C2313C30F9F00825C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrEatFoodie/StrEatFoodie-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "StrEatFoodie/StrEatFoodie-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StrEatFoodie\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = StrEatFoodie;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD4F7C2413C30F9F00825C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrEatFoodie/StrEatFoodie-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "StrEatFoodie/StrEatFoodie-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StrEatFoodie\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = StrEatFoodie;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD4F7BFE13C30F9F00825C6E /* Build configuration list for PBXProject "StrEatFoodie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4F7C2013C30F9F00825C6E /* Debug */,
+				DD4F7C2113C30F9F00825C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4F7C2213C30F9F00825C6E /* Build configuration list for PBXNativeTarget "StrEatFoodie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4F7C2313C30F9F00825C6E /* Debug */,
+				DD4F7C2413C30F9F00825C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD4F7BFB13C30F9F00825C6E /* Project object */;
+}
