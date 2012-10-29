@@ -3,7 +3,7 @@
 #import "BackgroundView.h"
 #import "StatusItemView.h"
 #import "MenubarController.h"
-#import "TSUser.h"
+#import "TPUser.h"
 
 #define OPEN_DURATION .15
 #define CLOSE_DURATION .1
@@ -74,8 +74,13 @@ NSString* dateString;
     }
     
     if (self.selectedDate) {
-        [self.dateLabel setStringValue:[NSString stringWithFormat:@"Last updated %@", self.selectedDate]];
+        if ([self.selectedDate isEqualToString:@""]) {
+            [self.dateLabel setStringValue:[NSString stringWithFormat:@"Not yet updated"]];
+        } else {
+            [self.dateLabel setStringValue:[NSString stringWithFormat:@"Last updated %@", self.selectedDate]];
+        }
     }
+    
     [self.tableView reloadData];
 }
 
@@ -117,7 +122,7 @@ NSString* dateString;
     NSArray *trucks = self.selectedTrucks;
     
     NSTableCellView *cellView = (NSTableCellView*)cell;
-    TSUser *t = [trucks objectAtIndex:row];
+    TPUser *t = [trucks objectAtIndex:row];
     [cellView.textField setStringValue:t.name];
 }
 
@@ -129,7 +134,7 @@ NSString* dateString;
 
     NSTableCellView *cellView = [tableView makeViewWithIdentifier:@"truckview" owner:self];
     
-    TSUser *t = [trucks objectAtIndex:row];
+    TPUser *t = [trucks objectAtIndex:row];
     
     [cellView.textField setStringValue:t.name];
     NSImage *image = [[NSImage alloc] initWithContentsOfURL:t.profileImageURL];
@@ -137,7 +142,6 @@ NSString* dateString;
     [cellView.imageView setWantsLayer:YES];
     cellView.imageView.layer.masksToBounds = YES;
     cellView.imageView.layer.borderWidth = 1.0;
-    //[NSColor blackColor].
     cellView.imageView.layer.borderColor = CGColorCreateGenericGray(1, 1);
     cellView.imageView.layer.cornerRadius = 8.0;
     [cellView.imageView setImageScaling:NSScaleToFit];
@@ -150,7 +154,7 @@ NSString* dateString;
 {
     NSArray *trucks = self.selectedTrucks;
 
-    TSUser *t = [trucks objectAtIndex:self.tableView.clickedRow];
+    TPUser *t = [trucks objectAtIndex:self.tableView.clickedRow];
     NSURL *url = t.URL;
     if (url == nil) {
         url = t.twitterURL;    

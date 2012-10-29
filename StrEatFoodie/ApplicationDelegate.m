@@ -1,6 +1,6 @@
 #import "ApplicationDelegate.h"
-#import "TweetStreamer.h"
-#import "TSTweet.h"
+#import "TweetPoller.h"
+#import "TPTweet.h"
 #import "StrEatFoodTweet.h"
 
 @implementation ApplicationDelegate
@@ -33,41 +33,6 @@ void *kContextActivePanel = &kContextActivePanel;
 
 #pragma mark - NSApplicationDelegate
 
-/*
-- (void)requestFailedWithError:(NSError*)error
-{
-    
-}
-
-- (void)requestSucceededWithParsedJSON:(NSArray*)dictArray
-{
-    for (NSDictionary *tweetDict in dictArray) {
-        if (![self textForTweet:tweetDict]) {
-            DLog(@"There's no text field in the JSON response, probably because of rate limiting");
-        } else if ([self tweetIsLunch:tweetDict]) {
-            if ([self lunchTweetIsNew:tweetDict]) {
-                [self updateLunch:tweetDict];
-                break;
-            }
-        }
-    }
-}
-*/
-
-
-NSDictionary *currentLunchTweet;
-
-- (void)updateLunch:(NSDictionary*)tweetDict
-{
-    /*
-    NSLog(@"updateLunch");
-    currentLunchTweet = tweetDict;
-    lunchTrucks = [truckIndex trucksForMentions:[self mentionsForTweet:tweetDict]];
-    [self.panelController setDateString:[self dateForTweetDict:tweetDict]];
-    [self.panelController setLunchTrucks:lunchTrucks];
-     */
-}
-
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
     self.lunchTrucks = [[NSMutableArray alloc] init];
@@ -76,17 +41,17 @@ NSDictionary *currentLunchTweet;
     // Install icon into the menu bar
     self.menubarController = [[MenubarController alloc] init];
     
-    TweetStreamer *streamer = [[TweetStreamer alloc] init];
-    [streamer beginStreamForUserName:@"SoMaStrEatFood"
-                   withReceivedBlock:^(NSArray *tweets) {
-                       dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-                       dispatch_async(queue, ^{
-                           [self.mealIndex indexTweets:tweets];
-                           dispatch_sync(dispatch_get_main_queue(), ^{
-                               [self.panelController updateTrucks];
-                           });
-                       });
-                   }];
+    TweetPoller *streamer = [[TweetPoller alloc] init];
+    [streamer beginPollingUserName:@"SoMaStrEatFood"
+                 withReceivedBlock:^(NSArray *tweets) {
+                     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+                     dispatch_async(queue, ^{
+                         [self.mealIndex indexTweets:tweets];
+                         dispatch_sync(dispatch_get_main_queue(), ^{
+                            [self.panelController updateTrucks];
+                         });
+                     });
+                 }];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender

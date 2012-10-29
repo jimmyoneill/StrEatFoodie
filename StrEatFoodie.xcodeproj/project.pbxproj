@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2022B53E163E259F00508C58 /* libTweetPoller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B53A163E22FD00508C58 /* libTweetPoller.a */; };
 		20CD05B215FDBB44006ADD68 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */; };
 		20CD05B315FDBB44006ADD68 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059315FDBB44006ADD68 /* BackgroundView.m */; };
 		20CD05B415FDBB44006ADD68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20CD059615FDBB44006ADD68 /* MainMenu.xib */; };
@@ -21,30 +22,30 @@
 		20CD05C115FDBB44006ADD68 /* StrEatFoodMealIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD05AF15FDBB44006ADD68 /* StrEatFoodMealIndex.m */; };
 		20CD32C215F1429A0058766A /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CD32C015F1429A0058766A /* Status.png */; };
 		20CD32C315F1429A0058766A /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CD32C115F1429A0058766A /* StatusHighlighted.png */; };
-		20CDD6FB15FDC87700A97A62 /* libTweetStreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F1391215FDC725007CC1DE /* libTweetStreamer.a */; };
 		20EAA8681615891C008531AE /* streatfoodlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EAA8671615891C008531AE /* streatfoodlogo.png */; };
 		20EAA86A16158C33008531AE /* streatfoodbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20EAA86916158C33008531AE /* streatfoodbackground.jpeg */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		20F1391115FDC725007CC1DE /* PBXContainerItemProxy */ = {
+		2022B539163E22FD00508C58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */;
+			containerPortal = 2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 20C39E7215FD742A00A9D545;
-			remoteInfo = TweetStreamer;
+			remoteInfo = TweetPoller;
 		};
-		20F1391315FDC73B007CC1DE /* PBXContainerItemProxy */ = {
+		2022B53C163E258A00508C58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */;
+			containerPortal = 2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 20C39E7115FD742A00A9D545;
-			remoteInfo = TweetStreamer;
+			remoteInfo = TweetPoller;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TweetPoller.xcodeproj; path = ../TweetPoller/TweetPoller.xcodeproj; sourceTree = "<group>"; };
 		20CD059015FDBB44006ADD68 /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDelegate.h; path = StrEatFoodie/ApplicationDelegate.h; sourceTree = SOURCE_ROOT; };
 		20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationDelegate.m; path = StrEatFoodie/ApplicationDelegate.m; sourceTree = SOURCE_ROOT; };
 		20CD059215FDBB44006ADD68 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundView.h; path = StrEatFoodie/BackgroundView.h; sourceTree = SOURCE_ROOT; };
@@ -73,7 +74,6 @@
 		20CD32C115F1429A0058766A /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
 		20EAA8671615891C008531AE /* streatfoodlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streatfoodlogo.png; sourceTree = "<group>"; };
 		20EAA86916158C33008531AE /* streatfoodbackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = streatfoodbackground.jpeg; sourceTree = "<group>"; };
-		20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TweetStreamer.xcodeproj; path = ../TweetStreamer/TweetStreamer.xcodeproj; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* StrEatFoodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrEatFoodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CDD6FB15FDC87700A97A62 /* libTweetStreamer.a in Frameworks */,
+				2022B53E163E259F00508C58 /* libTweetPoller.a in Frameworks */,
 				DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,10 +94,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20F1390B15FDC725007CC1DE /* Products */ = {
+		2022B533163E22FD00508C58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20F1391215FDC725007CC1DE /* libTweetStreamer.a */,
+				2022B53A163E22FD00508C58 /* libTweetPoller.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 				DD4F7C0713C30F9F00825C6E /* Frameworks */,
 				DD4F7C0513C30F9F00825C6E /* Products */,
 				20CD05AA15FDBB44006ADD68 /* StrEatFoodie-Info.plist */,
-				20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */,
+				2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,7 +229,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				20F1391415FDC73B007CC1DE /* PBXTargetDependency */,
+				2022B53D163E258A00508C58 /* PBXTargetDependency */,
 			);
 			name = StrEatFoodie;
 			productName = Popup;
@@ -241,6 +241,9 @@
 /* Begin PBXProject section */
 		DD4F7BFB13C30F9F00825C6E /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = DD4F7BFE13C30F9F00825C6E /* Build configuration list for PBXProject "StrEatFoodie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -253,8 +256,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 20F1390B15FDC725007CC1DE /* Products */;
-					ProjectRef = 20F1390A15FDC725007CC1DE /* TweetStreamer.xcodeproj */;
+					ProductGroup = 2022B533163E22FD00508C58 /* Products */;
+					ProjectRef = 2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -265,11 +268,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		20F1391215FDC725007CC1DE /* libTweetStreamer.a */ = {
+		2022B53A163E22FD00508C58 /* libTweetPoller.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libTweetStreamer.a;
-			remoteRef = 20F1391115FDC725007CC1DE /* PBXContainerItemProxy */;
+			path = libTweetPoller.a;
+			remoteRef = 2022B539163E22FD00508C58 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -311,10 +314,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20F1391415FDC73B007CC1DE /* PBXTargetDependency */ = {
+		2022B53D163E258A00508C58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TweetStreamer;
-			targetProxy = 20F1391315FDC73B007CC1DE /* PBXContainerItemProxy */;
+			name = TweetPoller;
+			targetProxy = 2022B53C163E258A00508C58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -355,7 +358,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.7;
-				USER_HEADER_SEARCH_PATHS = "../TweetStreamer/**";
+				USER_HEADER_SEARCH_PATHS = "../TweetPoller/**";
 			};
 			name = Debug;
 		};
@@ -376,7 +379,7 @@
 				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx10.7;
-				USER_HEADER_SEARCH_PATHS = "../TweetStreamer/**";
+				USER_HEADER_SEARCH_PATHS = "../TweetPoller/**";
 			};
 			name = Release;
 		};
@@ -384,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StrEatFoodie/StrEatFoodie-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -403,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StrEatFoodie/StrEatFoodie-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";

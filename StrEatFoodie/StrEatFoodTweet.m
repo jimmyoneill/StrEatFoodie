@@ -14,7 +14,7 @@ NSNumber *_isMeal;
 @synthesize mealTypeStrings = _mealTypeStrings;
 @synthesize mealType = _mealType;
 
-- (id)initWithTweet:(TSTweet*)tweet
+- (id)initWithTweet:(TPTweet*)tweet
 {
     self = [super initWithJsonDict:tweet.jsonDict];
     if (self) {
@@ -35,10 +35,15 @@ NSNumber *_isMeal;
 - (BOOL)checkForMeal
 {
     for (NSString *word in [[[self text] lowercaseString] componentsSeparatedByString:@" "]) {
-        for (NSString *mealTypeString in self.mealTypeStrings) {
-            if ([word computeLevenshteinDistanceWithString:mealTypeString] <= 2) {
-                self.mealType = [self mealTypeStringToEnum:mealTypeString];
-                return true;
+        // If the tweet mentions at least 4 users and has either the word "lunch" or "dinner" within an
+        // edit distance of 2, then we consider it to be a lunch or dinner tweet, respectively.
+        // Pretty naive, I know, but 98% of the time it works every time.
+        if ([[self userMentions] count] > 3) {
+            for (NSString *mealTypeString in self.mealTypeStrings) {
+                if ([word computeLevenshteinDistanceWithString:mealTypeString] <= 2) {
+                    self.mealType = [self mealTypeStringToEnum:mealTypeString];
+                    return true;
+                }
             }
         }
     }
@@ -54,17 +59,6 @@ NSNumber *_isMeal;
 {
     return (MealType)[self.mealTypeStrings indexOfObject:mealTypeString];
 }
-
-/*
-- (NSArray*)foodTrucks
-{
-    NSMutableArray *trucks = [[NSMutableArray alloc] init];
-    for (NSString *screenName in [self mentionedScreenNames]) {
-        [trucks addObject:[[FoodTruck alloc] initWithTwitterHandle:screenName]];
-    }
-    return trucks;
-}
- */
 
 - (NSString*)formattedDate
 {

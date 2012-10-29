@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "TSTweet.h"
+#import "TPTweet.h"
 
 typedef enum {
     Lunch,
@@ -8,11 +8,10 @@ typedef enum {
 
 #define MEAL_TYPE_STRINGS @"lunch", @"dinner", nil
 
-@interface StrEatFoodTweet : TSTweet
+@interface StrEatFoodTweet : TPTweet
 
-- (id)initWithTweet:(TSTweet*)tweet;
+- (id)initWithTweet:(TPTweet*)tweet;
 - (BOOL)isMeal;
-- (NSArray*)foodTrucks;
 - (NSString*)formattedDate;
 
 @property (nonatomic) MealType mealType;
