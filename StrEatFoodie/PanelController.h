@@ -44,8 +44,6 @@
 - (void)openPanel;
 - (void)closePanel;
 - (NSRect)statusRectForWindow:(NSWindow *)window;
-- (void)updateTrucks;
-- (void)setDateString:(NSString*)date;
 
 - (void)updateTrucks;
 
