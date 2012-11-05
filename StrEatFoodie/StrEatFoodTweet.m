@@ -67,7 +67,18 @@ NSNumber *_isMeal;
 
 - (NSString*)formattedDate
 {
-    return [[[[self createdAt] componentsSeparatedByString:@" "] subarrayWithRange:NSMakeRange(0, 3)] componentsJoinedByString:@" "];
+    NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+    [inputFormatter setDateFormat:@"EEE MMM dd HH:mm:ss Z yyyy"];
+    [inputFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+
+    NSDate *date = [inputFormatter dateFromString:[self createdAt]];
+    
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [outputFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
+    [outputFormatter setTimeZone:[NSTimeZone localTimeZone]];
+    
+    return [outputFormatter stringFromDate:date];
 }
 
 @end
