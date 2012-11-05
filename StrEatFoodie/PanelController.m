@@ -68,20 +68,22 @@ NSString* dateString;
 
 - (void)reloadTableView
 {
-    if (self.mealTrucks) {
-        [self.spinner stopAnimation:self];
-        [self.spinner setHidden:YES];
-    }
-    
-    if (self.selectedDate) {
-        if ([self.selectedDate isEqualToString:@""]) {
-            [self.dateLabel setStringValue:[NSString stringWithFormat:@"Not yet updated"]];
-        } else {
-            [self.dateLabel setStringValue:[NSString stringWithFormat:@"Last updated %@", self.selectedDate]];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (self.mealTrucks) {
+            [self.spinner stopAnimation:self];
+            [self.spinner setHidden:YES];
         }
-    }
-    
-    [self.tableView reloadData];
+        
+        if (self.selectedDate) {
+            if ([self.selectedDate isEqualToString:@""]) {
+                [self.dateLabel setStringValue:[NSString stringWithFormat:@"Not yet updated"]];
+            } else {
+                [self.dateLabel setStringValue:[NSString stringWithFormat:@"Last updated %@", self.selectedDate]];
+            }
+        }
+        
+        [self.tableView reloadData];
+    });
 }
 
 - (IBAction)performActionForClick:(id)sender
