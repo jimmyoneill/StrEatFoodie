@@ -34,20 +34,25 @@ NSNumber *_isMeal;
 
 - (BOOL)checkForMeal
 {
-    for (NSString *word in [[[self text] lowercaseString] componentsSeparatedByString:@" "]) {
-        // If the tweet mentions at least 4 users and has either the word "lunch" or "dinner" within an
-        // edit distance of 2, then we consider it to be a lunch or dinner tweet, respectively.
-        // Pretty naive, I know, but 98% of the time it works every time.
-        if ([[self userMentions] count] > 3) {
+    // If the tweet mentions at least 4 users and has either the word "lunch" or "dinner" within an
+    // edit distance of 2, then we consider it to be a lunch or dinner tweet, respectively.
+    // Pretty naive, I know, but 98% of the time it works every time.
+
+    if ([[self userMentions] count] > 3) {
+        NSArray *lowercaseChunks = [[[self text] lowercaseString] componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyz"] invertedSet]];
+        
+        for (NSString *word in lowercaseChunks) {
             for (NSString *mealTypeString in self.mealTypeStrings) {
-                if ([word computeLevenshteinDistanceWithString:mealTypeString] <= 2) {
+                int levDistance = [word computeLevenshteinDistanceWithString:mealTypeString];
+                // computeLevenshteinDistanceWithString: returns -1 in the case of an error.
+                if (levDistance >= 0 && levDistance <= 2) {
                     self.mealType = [self mealTypeStringToEnum:mealTypeString];
-                    return true;
+                    return YES;
                 }
             }
         }
     }
-    return false;
+    return NO;
 }
 
 - (NSString*)mealTypeToString:(MealType)mealType
@@ -57,7 +62,7 @@ NSNumber *_isMeal;
 
 - (MealType)mealTypeStringToEnum:(NSString*)mealTypeString
 {
-    return (MealType)[self.mealTypeStrings indexOfObject:mealTypeString];
+    return (MealType)[self.mealTypeStrings indexOfObjectIdenticalTo:mealTypeString];
 }
 
 - (NSString*)formattedDate

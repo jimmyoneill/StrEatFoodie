@@ -43,14 +43,13 @@
                                                                                 nil];
 
     for (TPTweet *tweet in [tweets reverseObjectEnumerator]) {
-        if (!mealTypesToUpdate.count) break;
+        if (!mealTypesToUpdate.count) return;
         DLog(@"%@", tweet.text);
         
         StrEatFoodTweet* strEatTweet = [[StrEatFoodTweet alloc] initWithTweet:tweet];
         
         if (strEatTweet.isMeal) {
             NSNumber *mealType = [NSNumber numberWithInt:strEatTweet.mealType];
-            
             if ([mealTypesToUpdate containsObject:mealType]) {
                 [self setTrucks:[strEatTweet mentionedScreenNames] forMealType:[mealType intValue] date:[strEatTweet formattedDate]];
                 [mealTypesToUpdate removeObject:mealType];

@@ -2,8 +2,8 @@
 #import "TPTweet.h"
 
 typedef enum {
-    Lunch,
-    Dinner,
+    Lunch = 0,
+    Dinner = 1,
 } MealType;
 
 #define MEAL_TYPE_STRINGS @"lunch", @"dinner", nil
