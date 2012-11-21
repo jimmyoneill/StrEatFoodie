@@ -23,6 +23,7 @@
     __unsafe_unretained NSTableView *_tableView;
     __unsafe_unretained NSTextField *_dateLabel;
     __unsafe_unretained NSSegmentedControl *_mealControl;
+    __unsafe_unretained NSScrollView *_scrollView;
     __weak NSProgressIndicator *_spinner;
 }
 
@@ -32,6 +33,8 @@
 @property (nonatomic, unsafe_unretained) IBOutlet NSTableView *tableView;
 @property (nonatomic, unsafe_unretained) IBOutlet NSTextField *dateLabel;
 @property (nonatomic, unsafe_unretained) IBOutlet NSSegmentedControl *mealControl;
+@property (nonatomic, unsafe_unretained) IBOutlet NSScrollView *scrollView;
+
 @property (weak) IBOutlet NSProgressIndicator *spinner;
 
 - (IBAction)performActionForClick:(id)sender;

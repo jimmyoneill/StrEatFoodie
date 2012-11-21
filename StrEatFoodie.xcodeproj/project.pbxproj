@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2022B53E163E259F00508C58 /* libTweetPoller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B53A163E22FD00508C58 /* libTweetPoller.a */; };
+		208FD0FD16490BE1000F4F2E /* streatfoodie.icns in Resources */ = {isa = PBXBuildFile; fileRef = 208FD0FC16490BE1000F4F2E /* streatfoodie.icns */; };
 		20CD05B215FDBB44006ADD68 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */; };
 		20CD05B315FDBB44006ADD68 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059315FDBB44006ADD68 /* BackgroundView.m */; };
 		20CD05B415FDBB44006ADD68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20CD059615FDBB44006ADD68 /* MainMenu.xib */; };
@@ -23,7 +24,6 @@
 		20CD32C215F1429A0058766A /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CD32C015F1429A0058766A /* Status.png */; };
 		20CD32C315F1429A0058766A /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CD32C115F1429A0058766A /* StatusHighlighted.png */; };
 		20EAA8681615891C008531AE /* streatfoodlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EAA8671615891C008531AE /* streatfoodlogo.png */; };
-		20EAA86A16158C33008531AE /* streatfoodbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20EAA86916158C33008531AE /* streatfoodbackground.jpeg */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TweetPoller.xcodeproj; path = ../TweetPoller/TweetPoller.xcodeproj; sourceTree = "<group>"; };
+		208FD0FC16490BE1000F4F2E /* streatfoodie.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = streatfoodie.icns; sourceTree = "<group>"; };
+		208FD0FE164A4856000F4F2E /* StrEatFoodie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = StrEatFoodie.entitlements; path = StrEatFoodie/StrEatFoodie.entitlements; sourceTree = "<group>"; };
 		20CD059015FDBB44006ADD68 /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDelegate.h; path = StrEatFoodie/ApplicationDelegate.h; sourceTree = SOURCE_ROOT; };
 		20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationDelegate.m; path = StrEatFoodie/ApplicationDelegate.m; sourceTree = SOURCE_ROOT; };
 		20CD059215FDBB44006ADD68 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundView.h; path = StrEatFoodie/BackgroundView.h; sourceTree = SOURCE_ROOT; };
@@ -73,7 +75,6 @@
 		20CD32C015F1429A0058766A /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
 		20CD32C115F1429A0058766A /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
 		20EAA8671615891C008531AE /* streatfoodlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streatfoodlogo.png; sourceTree = "<group>"; };
-		20EAA86916158C33008531AE /* streatfoodbackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = streatfoodbackground.jpeg; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* StrEatFoodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrEatFoodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -105,6 +106,7 @@
 		DD4F7BF913C30F9F00825C6E = {
 			isa = PBXGroup;
 			children = (
+				208FD0FE164A4856000F4F2E /* StrEatFoodie.entitlements */,
 				DD4F7C0E13C30F9F00825C6E /* Sources */,
 				DD4F7C2813C3123E00825C6E /* User Interface */,
 				DD4F7C0713C30F9F00825C6E /* Frameworks */,
@@ -207,7 +209,7 @@
 		DD4F7C4813C322D800825C6E /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				20EAA86916158C33008531AE /* streatfoodbackground.jpeg */,
+				208FD0FC16490BE1000F4F2E /* streatfoodie.icns */,
 				20EAA8671615891C008531AE /* streatfoodlogo.png */,
 				20CD32C015F1429A0058766A /* Status.png */,
 				20CD32C115F1429A0058766A /* StatusHighlighted.png */,
@@ -287,7 +289,7 @@
 				20CD05B415FDBB44006ADD68 /* MainMenu.xib in Resources */,
 				20CD05BC15FDBB44006ADD68 /* Panel.xib in Resources */,
 				20EAA8681615891C008531AE /* streatfoodlogo.png in Resources */,
-				20EAA86A16158C33008531AE /* streatfoodbackground.jpeg in Resources */,
+				208FD0FD16490BE1000F4F2E /* streatfoodie.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +341,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -357,6 +360,7 @@
 				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "../TweetPoller/**";
 			};
@@ -367,6 +371,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -378,6 +383,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "../TweetPoller/**";
 			};
@@ -387,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = StrEatFoodie/StrEatFoodie.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StrEatFoodie/StrEatFoodie-Prefix.pch";
@@ -407,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = StrEatFoodie/StrEatFoodie.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StrEatFoodie/StrEatFoodie-Prefix.pch";
