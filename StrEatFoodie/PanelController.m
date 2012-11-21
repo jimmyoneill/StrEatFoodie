@@ -95,6 +95,10 @@ NSString* dateString;
     [self reloadTableView];
 }
 
+- (IBAction)quitClicked:(id)sender {
+    [NSApp terminate:self];
+}
+
 - (NSArray*)getSelectedMealTrucks
 {
     return self.mealTrucks ? [self.mealTrucks objectAtIndex:[self.mealControl selectedSegment]] : nil;

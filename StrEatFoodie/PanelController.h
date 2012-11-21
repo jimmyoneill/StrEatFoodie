@@ -38,6 +38,7 @@
 @property (weak) IBOutlet NSProgressIndicator *spinner;
 
 - (IBAction)performActionForClick:(id)sender;
+- (IBAction)quitClicked:(id)sender;
 
 @property (nonatomic) BOOL hasActivePanel;
 @property (nonatomic, unsafe_unretained, readonly) id<PanelControllerDelegate> delegate;
