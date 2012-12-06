@@ -1,7 +1,6 @@
 StrEatFoodie
 ============
-### The best and only [SoMaStrEatFood Park](http://somastreatfoodpark.com/) menubar app.
-
+### The best and only [SoMaStrEatFood Park](http://somastreatfoodpark.com/) menubar app. [Available for free](https://itunes.apple.com/us/app/streatfoodie/id576664821?mt=12) on the Mac App Store!
 
 StrEatFoodie listens to SoMa StrEatFood's [Twitter](https://twitter.com/somastreatfood), finds the tweets that announce which trucks will
 be at the park for lunch and dinner, and displays those trucks in a menubar popup.
