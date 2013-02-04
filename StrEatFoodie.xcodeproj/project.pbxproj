@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2022B53E163E259F00508C58 /* libTweetPoller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B53A163E22FD00508C58 /* libTweetPoller.a */; };
+		2069F537167332EC00E25D1B /* StrEatFoodStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2069F536167332EC00E25D1B /* StrEatFoodStorage.m */; };
 		208FD0FD16490BE1000F4F2E /* streatfoodie.icns in Resources */ = {isa = PBXBuildFile; fileRef = 208FD0FC16490BE1000F4F2E /* streatfoodie.icns */; };
 		20CD05B215FDBB44006ADD68 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */; };
 		20CD05B315FDBB44006ADD68 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD059315FDBB44006ADD68 /* BackgroundView.m */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		2022B532163E22FD00508C58 /* TweetPoller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TweetPoller.xcodeproj; path = ../TweetPoller/TweetPoller.xcodeproj; sourceTree = "<group>"; };
+		2069F535167332EC00E25D1B /* StrEatFoodStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrEatFoodStorage.h; sourceTree = SOURCE_ROOT; };
+		2069F536167332EC00E25D1B /* StrEatFoodStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrEatFoodStorage.m; sourceTree = SOURCE_ROOT; };
 		208FD0FC16490BE1000F4F2E /* streatfoodie.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = streatfoodie.icns; sourceTree = "<group>"; };
 		208FD0FE164A4856000F4F2E /* StrEatFoodie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = StrEatFoodie.entitlements; path = StrEatFoodie/StrEatFoodie.entitlements; sourceTree = "<group>"; };
 		20CD059015FDBB44006ADD68 /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDelegate.h; path = StrEatFoodie/ApplicationDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -149,6 +152,8 @@
 				20CD05AF15FDBB44006ADD68 /* StrEatFoodMealIndex.m */,
 				20CD059015FDBB44006ADD68 /* ApplicationDelegate.h */,
 				20CD059115FDBB44006ADD68 /* ApplicationDelegate.m */,
+				2069F535167332EC00E25D1B /* StrEatFoodStorage.h */,
+				2069F536167332EC00E25D1B /* StrEatFoodStorage.m */,
 			);
 			name = Sources;
 			path = Popup;
@@ -310,6 +315,7 @@
 				20CD05BE15FDBB44006ADD68 /* StatusItemView.m in Sources */,
 				20CD05C015FDBB44006ADD68 /* StrEatFoodTweet.m in Sources */,
 				20CD05C115FDBB44006ADD68 /* StrEatFoodMealIndex.m in Sources */,
+				2069F537167332EC00E25D1B /* StrEatFoodStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
