@@ -43,16 +43,32 @@
                                                                                 nil];
 
     for (TPTweet *tweet in [tweets reverseObjectEnumerator]) {
-        if (!mealTypesToUpdate.count) return;
-        DLog(@"%@", tweet.text);
+        // These tweets are in reverse chronological order.
         
-        StrEatFoodTweet* strEatTweet = [[StrEatFoodTweet alloc] initWithTweet:tweet];
-        
+        StrEatFoodTweet *strEatTweet = [[StrEatFoodTweet alloc] initWithTweet:tweet];
+                
         if (strEatTweet.isMeal) {
-            NSNumber *mealType = [NSNumber numberWithInt:strEatTweet.mealType];
+            NSNumber *mealType = strEatTweet.mealType;
+            if (!mealType) {
+                // We know the tweet corresponds to a meal, but it doesn't mention either 'lunch' or 'dinner',
+                // so we need to guess which one it is. If the tweet was created during or before one o'clock,
+                // let's assume it's a lunch tweet.
+                
+                int lunchCutoffHour = 13;
+                if (strEatTweet.hour <= lunchCutoffHour && [mealTypesToUpdate containsObject:[NSNumber numberWithInt:Lunch]]) {
+                    mealType = [NSNumber numberWithInt:Lunch];
+                } else if ([mealTypesToUpdate containsObject:[NSNumber numberWithInt:Dinner]]) {
+                    mealType = [NSNumber numberWithInt:Dinner];
+                }
+            }
+            
             if ([mealTypesToUpdate containsObject:mealType]) {
                 [self setTrucks:[strEatTweet mentionedScreenNames] forMealType:[mealType intValue] date:[strEatTweet formattedDate]];
                 [mealTypesToUpdate removeObject:mealType];
+                
+                if (!mealTypesToUpdate.count) {
+                    return;
+                }
             }
         }
     }

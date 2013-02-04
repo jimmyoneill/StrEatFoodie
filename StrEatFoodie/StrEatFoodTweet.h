@@ -12,8 +12,9 @@ typedef enum {
 
 - (id)initWithTweet:(TPTweet*)tweet;
 - (BOOL)isMeal;
-- (NSString*)formattedDate;
 
-@property (nonatomic) MealType mealType;
+@property (nonatomic, readonly) NSNumber *mealType;
+@property (nonatomic, readonly) NSInteger hour;
+@property (nonatomic, readonly) NSString *formattedDate;
 
 @end
